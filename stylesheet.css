@@ -1,0 +1,41 @@
+#gameBoard
+{
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    width: 70%;
+    height: 70%;
+    border: 5px solid #002fb1;
+    padding: 10px;
+}
+#upperLine
+{
+    border: 5px solid #6fe005;
+}
+#newGameBtn
+{
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background-color:#3d94f6;
+	border-radius:6px;
+	border:2px solid #02204b;
+	display:inline-block;
+	font-size:15px;
+	font-weight:bold;
+    padding:6px 10px;
+    margin-right: 70%;
+}
+#newGameBtn:hover
+{
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	background-color:#1e62d0;
+}
+#newGameBtn:active
+{
+	position:relative;
+	top:1px;
+}
+.tags
+{
+    padding: 3px;
+    display: inline;
+}
