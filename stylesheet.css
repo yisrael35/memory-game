@@ -1,16 +1,18 @@
 #gameBoard
 {
     position: absolute;
-    left: 15%;
-    top: 15%;
-    width: 70%;
-    height: 70%;
+    left: 17%;
+    top: 10%;
+    width: 65%;
+    height: 80%;
     border: 5px solid #002fb1;
+    background:linear-gradient(to bottom, #483de6 5%, #0c3d75 100%);
     padding: 10px;
 }
 #upperLine
 {
     border: 5px solid #6fe005;
+    margin-bottom: 20px;
 }
 #newGameBtn
 {
@@ -22,7 +24,7 @@
 	font-size:15px;
 	font-weight:bold;
     padding:6px 10px;
-    margin-right: 70%;
+    margin-right: 68%;
 }
 #newGameBtn:hover
 {
@@ -38,4 +40,15 @@
 {
     padding: 3px;
     display: inline;
+}
+img{
+    width: 12%;
+    height: 13%;
+    margin-top: 4px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+body
+{
+    background-color: #283242 ;
 }
