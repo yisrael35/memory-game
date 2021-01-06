@@ -22,6 +22,8 @@ img_arr.push("./images/13.png");
 img_arr.push("./images/14.png");
 img_arr.push("./images/15.png");
 
+let win_msg = $("<div></div>").text("YOU WON THE GAME").attr('id',"winMsg");
+win_msg.hide();
 //create text Moves and Matches 
 let movesTag = $("<h3></h3>").text("Moves: " + moves).attr('class',"tags");
     movesTag.attr('id','moves');  
@@ -42,7 +44,7 @@ let loadPage = function()
     for (let index = 0; index < all_img_array.length; index++) {
         if (index< all_img_array.length/2) {      
             let single_img = $("<img></img>").attr('class',img_arr[index]);  
-            single_img.attr('src',img_arr[index] );
+            single_img.attr('src',img_arr[index]);
             all_img_array[index] = single_img;
         }else{
             let single_img = $("<img></img>").attr('class',img_arr[index-(rows*cols/2)]);
@@ -66,6 +68,7 @@ let loadPage = function()
     upper_line.append(movesTag);
     upper_line.append(matchesTag);
     game_board.append(upper_line);
+    game_board.append(win_msg);
     //load all the arrays to the screen and show only the back side
     let counter = 0;
     for(let i = 0 ; i < rows ; i++)
@@ -136,7 +139,7 @@ function backSideClick(event)
     }
     //in case all matchs had found
     if(matches == (cols*rows)/2){
-        alert("YOU WON THE GAME")
+        win_msg.show();
     }
 
 }
@@ -151,5 +154,6 @@ function initNewGame(event)
     temp_id2 = -1;
     counter = 0;
     turn_counter = 0;
+    win_msg.hide();
     loadPage();
 }

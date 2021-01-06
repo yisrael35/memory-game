@@ -52,3 +52,23 @@ body
 {
     background-color: #283242 ;
 }
+#winMsg
+{
+    font-family: Georgia, serif;
+    font-size: 29px;
+    letter-spacing: 2.6px;
+    word-spacing: 4.2px;
+    color: #252D45;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+    position: absolute;
+    text-align: center;
+    left: 32%;
+    top: 27%;
+    background:linear-gradient(to bottom, #00f5c0 5%, #00e056 100%);
+    width: 38%;
+    height: 20%;
+    border: 3px solid #9b9810;
+    padding-top: 5%;
+}
